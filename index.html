@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>EXAA - Mission Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>EXAA - CENTRAL OPERACIONAL</h1>
+
+        <div class="panel">
+
+            <label>Atos (2 a 5)</label>
+            <input id="acts" type="number" min="2" max="5" value="3">
+
+            <label>Ameaças (2 a 5)</label>
+            <input id="threats" type="number" min="2" max="5" value="2">
+
+            <label>Sucessos por Ato</label>
+            <input id="successes" type="number" min="1" max="10" value="5">
+
+            <label>Falhas por Ato</label>
+            <input id="failures" type="number" min="1" max="10" value="3">
+
+            <button onclick="generateMission()">
+                GERAR MISSÃO
+            </button>
+
+        </div>
+
+        <p id="output"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
