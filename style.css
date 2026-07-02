@@ -50,3 +50,40 @@ button {
 button:hover {
     background: #d000ff;
 }
+.number-control {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.number-control button {
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+.number-control span {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #b000ff;
+
+    width: 60px;
+
+    text-align: center;
+
+}
