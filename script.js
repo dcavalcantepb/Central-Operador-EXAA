@@ -16,12 +16,12 @@ function changeValue(id, change, min, max) {
 
 function generateMission() {
 
-    const acts = document.getElementById("acts").value;
-    const threats = document.getElementById("threats").value;
-    const successes = document.getElementById("successes").value;
-    const failures = document.getElementById("failures").value;
-
-    const mission = {
+const acts = Number(document.getElementById("acts").innerText);
+const threats = Number(document.getElementById("threats").innerText);
+const successes = Number(document.getElementById("successes").innerText);
+const failures = Number(document.getElementById("failures").innerText);
+    
+const mission = {
         acts: Number(acts),
         threats: Number(threats),
         successes: Number(successes),
