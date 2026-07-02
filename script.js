@@ -1,3 +1,19 @@
+function changeValue(id, change, min, max) {
+
+    const element = document.getElementById(id);
+
+    let value = Number(element.innerText);
+
+    value += change;
+
+    if (value < min) value = min;
+
+    if (value > max) value = max;
+
+    element.innerText = value;
+
+}
+
 function generateMission() {
 
     const acts = document.getElementById("acts").value;
