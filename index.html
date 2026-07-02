@@ -14,17 +14,69 @@
 
         <div class="panel">
 
-            <label>Atos (2 a 5)</label>
-            <input id="acts" type="number" min="2" max="5" value="3" readonly>
+            <label>Atos</label>
+            
+            <div class="number-control">
+            
+                <button onclick="changeValue('acts', -1, 2, 5)">
+                    −
+                </button>
+            
+                <span id="acts">3</span>
+            
+                <button onclick="changeValue('acts', 1, 2, 5)">
+                    +
+                </button>
+            
+            </div>
 
-            <label>Ameaças (2 a 5)</label>
-            <input id="threats" type="number" min="2" max="5" value="2" readonly>
+            <label>Ameaças</label>
 
-            <label>Sucessos por Ato (1 a 5)</label>
-            <input id="successes" type="number" min="1" max="5" value="3" readonly>
+            <div class="number-control">
+            
+                <button onclick="changeValue('threats', -1, 2, 5)">
+                    −
+                </button>
+            
+                <span id="threats">2</span>
+            
+                <button onclick="changeValue('threats', 1, 2, 5)">
+                    +
+                </button>
+            
+            </div>
 
-            <label>Falhas por Ato (1 a 5)</label>
-            <input id="failures" type="number" min="1" max="5" value="3" readonly>
+            <label>Sucessos por Ato</label>
+
+            <div class="number-control">
+            
+                <button onclick="changeValue('successes', -1, 1, 10)">
+                    −
+                </button>
+            
+                <span id="successes">5</span>
+            
+                <button onclick="changeValue('successes', 1, 1, 10)">
+                    +
+                </button>
+            
+            </div>
+
+            <label>Falhas por Ato</label>
+
+            <div class="number-control">
+            
+                <button onclick="changeValue('failures', -1, 1, 10)">
+                    −
+                </button>
+            
+                <span id="failures">3</span>
+            
+                <button onclick="changeValue('failures', 1, 1, 10)">
+                    +
+                </button>
+            
+            </div>
 
             <button onclick="generateMission()">
                 GERAR MISSÃO
